@@ -1,5 +1,5 @@
-randomizefile (1.2); urgency=medium
+randomizefile (1.2) UNRELEASED; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release.
 
  -- Leander Jedamus <ljedamus@web.de>  Thu, 05 Dec 2019 22:36:35 +0100
