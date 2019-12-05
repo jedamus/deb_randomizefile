@@ -1,6 +1,0 @@
-Package: randomizefile
-Version: 1.2
-Architecture: amd64
-Maintainer: Leander Jedamus <ljedamus@web.de>
-Installed-Size: 21
-Description: randomizes a file
