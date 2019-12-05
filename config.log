@@ -517,7 +517,7 @@ configure:6564: result: yes
 configure:6564: checking for pthread.h
 configure:6564: result: yes
 configure:6602: gcc -o conftest -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,-Bsymbolic-functions -Wl,-z,relro conftest.c   >&5
-/tmp/ccYvXGVW.o: In function `main':
+/tmp/ccE892MY.o: In function `main':
 /home/leander/Projekte/deb/randomizefile/conftest.c:48: undefined reference to `pthread_mutexattr_init'
 collect2: error: ld returned 1 exit status
 configure:6602: $? = 1
@@ -766,7 +766,7 @@ configure:8270: $? = 0
 configure:8270: result: yes
 configure:8283: checking for getlocalename_l
 configure:8283: gcc -o conftest -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,-Bsymbolic-functions -Wl,-z,relro conftest.c  >&5
-/tmp/ccVBoDfN.o: In function `main':
+/tmp/ccmfCypK.o: In function `main':
 /home/leander/Projekte/deb/randomizefile/conftest.c:103: undefined reference to `getlocalename_l'
 collect2: error: ld returned 1 exit status
 configure:8283: $? = 1
@@ -1625,6 +1625,7 @@ config.status:1009: creating lib/Makefile
 config.status:1009: creating src/Makefile
 config.status:1009: creating po/Makefile
 config.status:1009: creating config.h
+config.status:1190: config.h is unchanged
 config.status:1238: executing depfiles commands
 config.status:1238: executing po-directories commands
 configure:11782: WARNING: unrecognized options: --disable-maintainer-mode
