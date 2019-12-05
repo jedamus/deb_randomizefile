@@ -5,5 +5,5 @@ Standards-Version: 3.9.6
 
 Package: randomizefile
 Architecture: any
-Depends:
+Depends: libc6 (>= 2.7)
 Description: randomizes a file
