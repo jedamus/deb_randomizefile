@@ -1,0 +1,7 @@
+Das ist eine Beispielinstallation von automake/autoconf.
+
+% tar xvfz am_randomize_file-1.1.tar.gz
+% cd am_randomize_file-1.1
+% ./configure
+% make
+% sudo make install
