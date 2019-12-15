@@ -1,0 +1,7 @@
+Package: randomizefile
+Version: 1.2
+Architecture: amd64
+Maintainer: Leander Jedamus <ljedamus@web.de>
+Installed-Size: 28
+Depends: libc6 (>= 2.7)
+Description: randomizes a file

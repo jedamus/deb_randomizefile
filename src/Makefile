@@ -88,7 +88,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
-bin_PROGRAMS = am_randomize_file$(EXEEXT)
+bin_PROGRAMS = randomizefile$(EXEEXT)
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/codeset.m4 \
@@ -117,10 +117,10 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_am_randomize_file_OBJECTS = am_randomize_file-main.$(OBJEXT)
-am_randomize_file_OBJECTS = $(am_am_randomize_file_OBJECTS)
-am_randomize_file_LDADD = $(LDADD)
-am_randomize_file_DEPENDENCIES =
+am_randomizefile_OBJECTS = randomizefile-main.$(OBJEXT)
+randomizefile_OBJECTS = $(am_randomizefile_OBJECTS)
+randomizefile_LDADD = $(LDADD)
+randomizefile_DEPENDENCIES =
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -153,8 +153,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(am_randomize_file_SOURCES)
-DIST_SOURCES = $(am_randomize_file_SOURCES)
+SOURCES = $(randomizefile_SOURCES)
+DIST_SOURCES = $(randomizefile_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -333,8 +333,8 @@ top_srcdir = ..
 LDADD = -lknoten -lsqrt -lm
 AM_LDFLAGS = -L../lib
 AM_CPPFLAGS = -I../lib -I../../../lib
-am_randomize_file_SOURCES = main.c gettext.h
-am_randomize_file_CPPFLAGS = -DLOCALEDIR=\"$(localedir)\" -I../lib -I../../../lib
+randomizefile_SOURCES = main.c gettext.h
+randomizefile_CPPFLAGS = -DLOCALEDIR=\"$(localedir)\" -I../lib -I../../../lib
 all: all-am
 
 .SUFFIXES:
@@ -411,9 +411,9 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
-am_randomize_file$(EXEEXT): $(am_randomize_file_OBJECTS) $(am_randomize_file_DEPENDENCIES) $(EXTRA_am_randomize_file_DEPENDENCIES) 
-	@rm -f am_randomize_file$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(am_randomize_file_OBJECTS) $(am_randomize_file_LDADD) $(LIBS)
+randomizefile$(EXEEXT): $(randomizefile_OBJECTS) $(randomizefile_DEPENDENCIES) $(EXTRA_randomizefile_DEPENDENCIES) 
+	@rm -f randomizefile$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(randomizefile_OBJECTS) $(randomizefile_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -421,7 +421,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-#include ./$(DEPDIR)/am_randomize_file-main.Po
+#include ./$(DEPDIR)/randomizefile-main.Po
 
 .c.o:
 #	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -437,19 +437,19 @@ distclean-compile:
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) 
 	$(AM_V_CC)$(COMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
-am_randomize_file-main.o: main.c
-#	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(am_randomize_file_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT am_randomize_file-main.o -MD -MP -MF $(DEPDIR)/am_randomize_file-main.Tpo -c -o am_randomize_file-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/am_randomize_file-main.Tpo $(DEPDIR)/am_randomize_file-main.Po
-#	$(AM_V_CC)source='main.c' object='am_randomize_file-main.o' libtool=no 
+randomizefile-main.o: main.c
+#	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(randomizefile_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT randomizefile-main.o -MD -MP -MF $(DEPDIR)/randomizefile-main.Tpo -c -o randomizefile-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/randomizefile-main.Tpo $(DEPDIR)/randomizefile-main.Po
+#	$(AM_V_CC)source='main.c' object='randomizefile-main.o' libtool=no 
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) 
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(am_randomize_file_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o am_randomize_file-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(randomizefile_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o randomizefile-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
 
-am_randomize_file-main.obj: main.c
-#	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(am_randomize_file_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT am_randomize_file-main.obj -MD -MP -MF $(DEPDIR)/am_randomize_file-main.Tpo -c -o am_randomize_file-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/am_randomize_file-main.Tpo $(DEPDIR)/am_randomize_file-main.Po
-#	$(AM_V_CC)source='main.c' object='am_randomize_file-main.obj' libtool=no 
+randomizefile-main.obj: main.c
+#	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(randomizefile_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT randomizefile-main.obj -MD -MP -MF $(DEPDIR)/randomizefile-main.Tpo -c -o randomizefile-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/randomizefile-main.Tpo $(DEPDIR)/randomizefile-main.Po
+#	$(AM_V_CC)source='main.c' object='randomizefile-main.obj' libtool=no 
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) 
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(am_randomize_file_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o am_randomize_file-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(randomizefile_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o randomizefile-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
