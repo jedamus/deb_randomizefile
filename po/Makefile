@@ -69,10 +69,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/am_randomize_file
-pkgincludedir = $(includedir)/am_randomize_file
-pkglibdir = $(libdir)/am_randomize_file
-pkglibexecdir = $(libexecdir)/am_randomize_file
+pkgdatadir = $(datadir)/randomizefile
+pkgincludedir = $(includedir)/randomizefile
+pkglibdir = $(libdir)/randomizefile
+pkglibexecdir = $(libexecdir)/randomizefile
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -208,13 +208,13 @@ MSGFMT = /usr/bin/msgfmt
 MSGFMT_015 = /usr/bin/msgfmt
 MSGMERGE = /usr/bin/msgmerge
 OBJEXT = o
-PACKAGE = am_randomize_file
+PACKAGE = randomizefile
 PACKAGE_BUGREPORT = ljedamus@web.de
-PACKAGE_NAME = am_randomize_file
-PACKAGE_STRING = am_randomize_file 1.1
-PACKAGE_TARNAME = am_randomize_file
+PACKAGE_NAME = randomizefile
+PACKAGE_STRING = randomizefile 1.2
+PACKAGE_TARNAME = randomizefile
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.1
+PACKAGE_VERSION = 1.2
 PATH_SEPARATOR = :
 POSUB = po
 PRI_MACROS_BROKEN = 0
@@ -225,7 +225,7 @@ SHELL = /bin/bash
 STRIP = 
 USE_INCLUDED_LIBINTL = no
 USE_NLS = yes
-VERSION = 1.1
+VERSION = 1.2
 WINDRES = 
 WOE32 = no
 WOE32DLL = no
@@ -284,10 +284,10 @@ target_alias =
 top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
-EXTRA_DIST = LINGUAS POTFILES.in am_randomize_file.po am_randomize_file.po.old \
-	am_randomize_file_de.po am_randomize_file_de.po.old \
-	de/LC_MESSAGES/am_randomize_file.mo am_randomize_file_en.po \
-	am_randomize_file_en.po.old en/LC_MESSAGES/am_randomize_file.mo
+EXTRA_DIST = LINGUAS POTFILES.in randomizefile.po randomizefile.po.old \
+	randomizefile_de.po randomizefile_de.po.old \
+	de/LC_MESSAGES/randomizefile.mo randomizefile_en.po \
+	randomizefile_en.po.old en/LC_MESSAGES/randomizefile.mo
 all: all-am
 
 .SUFFIXES:
@@ -474,16 +474,16 @@ uninstall-am: uninstall-local
 
 
 install-data-local:
-		    $(MKDIR_P) $(localedir)/de/LC_MESSAGES
-		    chmod u+rwx $(localedir)/de/LC_MESSAGES
-		    $(INSTALL) -m 644 $(srcdir)/de/LC_MESSAGES/am_randomize_file.mo $(localedir)/de/LC_MESSAGES
-		    $(MKDIR_P) $(localedir)/en/LC_MESSAGES
-		    chmod u+rwx $(localedir)/en/LC_MESSAGES
-		    $(INSTALL) -m 644 $(srcdir)/en/LC_MESSAGES/am_randomize_file.mo $(localedir)/en/LC_MESSAGES
+		    $(MKDIR_P) $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    chmod u+rwx $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    $(INSTALL) -m 644 $(srcdir)/de/LC_MESSAGES/randomizefile.mo $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    $(MKDIR_P) $(DESTDIR)$(localedir)/en/LC_MESSAGES
+		    chmod u+rwx $(DESTDIR)$(localedir)/en/LC_MESSAGES
+		    $(INSTALL) -m 644 $(srcdir)/en/LC_MESSAGES/randomizefile.mo $(DESTDIR)$(localedir)/en/LC_MESSAGES
 
 uninstall-local:
-		    rm -f $(localedir)/de/LC_MESSAGES/am_randomize_file.mo
-		    rm -f $(localedir)/en/LC_MESSAGES/am_randomize_file.mo
+		    rm -f $(DESTDIR)$(localedir)/de/LC_MESSAGES/randomizefile.mo
+		    rm -f $(DESTDIR)$(localedir)/en/LC_MESSAGES/randomizefile.mo
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

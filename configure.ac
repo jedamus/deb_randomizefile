@@ -1,4 +1,4 @@
-AC_INIT([am_randomize_file], [1.1], [ljedamus@web.de])
+AC_INIT([randomizefile], [1.2], [ljedamus@web.de])
 AM_INIT_AUTOMAKE([-Wall])
 AC_PROG_CC
 AC_USE_SYSTEM_EXTENSIONS

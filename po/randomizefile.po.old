@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the am_randomize_file package.
 # ljedamus@web.de, 2019.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: am_randomize_file 1.1\n"
 "Report-Msgid-Bugs-To: Leander Jedamus <ljedamus@web.de>\n"
-"POT-Creation-Date: 2019-12-03 22:58+0100\n"
-"PO-Revision-Date: 2019-11-25 07:08+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: en\n"
+"POT-Creation-Date: 2019-12-15 16:29+0100\n"
+"PO-Revision-Date: 2019-12-15 16:29+0100\n"
+"Last-Translator: Leander Jedamus <ljedamus@web.de>\n"
+"Language-Team: Leander Jedamus <ljedamus@web.de>\n"
+"Language: de en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/main.c:23
-#, fuzzy, c-format
+#, c-format
 msgid "This is %s in %s.\n"
-msgstr "This is %s.\n"
+msgstr ""

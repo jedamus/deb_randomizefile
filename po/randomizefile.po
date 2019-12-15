@@ -1,15 +1,15 @@
-# am_randomize_file.
+# randomizefile.
 # Copyright (C) 2019 Leander Jedamus
-# This file is distributed under the same license as the am_randomize_file package.
+# This file is distributed under the same license as the randomizefile package.
 # ljedamus@web.de, 2019.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: am_randomize_file 1.1\n"
+"Project-Id-Version: randomizefile 1.2\n"
 "Report-Msgid-Bugs-To: Leander Jedamus <ljedamus@web.de>\n"
-"POT-Creation-Date: 2019-11-25 13:36+0100\n"
-"PO-Revision-Date: 2019-11-25 13:36+0100\n"
+"POT-Creation-Date: 2019-12-15 16:32+0100\n"
+"PO-Revision-Date: 2019-12-15 16:32+0100\n"
 "Last-Translator: Leander Jedamus <ljedamus@web.de>\n"
 "Language-Team: Leander Jedamus <ljedamus@web.de>\n"
 "Language: de en\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/main.c:22
+#: src/main.c:23
 #, c-format
 msgid "This is %s in %s.\n"
 msgstr ""

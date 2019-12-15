@@ -260,25 +260,25 @@
 #define INTDIV0_RAISES_SIGFPE 1
 
 /* Name of package */
-#define PACKAGE "am_randomize_file"
+#define PACKAGE "randomizefile"
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "ljedamus@web.de"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "am_randomize_file"
+#define PACKAGE_NAME "randomizefile"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "am_randomize_file 1.1"
+#define PACKAGE_STRING "randomizefile 1.2"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "am_randomize_file"
+#define PACKAGE_TARNAME "randomizefile"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.1"
+#define PACKAGE_VERSION "1.2"
 
 /* Define if <inttypes.h> exists and defines unusable PRI* macros. */
 /* #undef PRI_MACROS_BROKEN */
@@ -350,7 +350,7 @@
 /* #undef USE_WINDOWS_THREADS */
 
 /* Version number of package */
-#define VERSION "1.1"
+#define VERSION "1.2"
 
 /* Define to 1 if on MINIX. */
 /* #undef _MINIX */

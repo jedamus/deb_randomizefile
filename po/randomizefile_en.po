@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: am_randomize_file 1.1\n"
 "Report-Msgid-Bugs-To: Leander Jedamus <ljedamus@web.de>\n"
-"POT-Creation-Date: 2019-11-25 13:36+0100\n"
+"POT-Creation-Date: 2019-12-15 16:32+0100\n"
 "PO-Revision-Date: 2019-11-25 07:08+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/main.c:22
+#: src/main.c:23
 #, fuzzy, c-format
 msgid "This is %s in %s.\n"
 msgstr "This is %s.\n"

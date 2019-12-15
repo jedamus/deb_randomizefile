@@ -11,13 +11,13 @@ EXTRA_DIST += en/LC_MESSAGES/@PACKAGE@.mo
 localedir = $(datadir)/locale
 
 install-data-local:
-		    $(MKDIR_P) $(localedir)/de/LC_MESSAGES
-		    chmod u+rwx $(localedir)/de/LC_MESSAGES
-		    $(INSTALL) -m 644 $(srcdir)/de/LC_MESSAGES/@PACKAGE@.mo $(localedir)/de/LC_MESSAGES
-		    $(MKDIR_P) $(localedir)/en/LC_MESSAGES
-		    chmod u+rwx $(localedir)/en/LC_MESSAGES
-		    $(INSTALL) -m 644 $(srcdir)/en/LC_MESSAGES/@PACKAGE@.mo $(localedir)/en/LC_MESSAGES
+		    $(MKDIR_P) $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    chmod u+rwx $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    $(INSTALL) -m 644 $(srcdir)/de/LC_MESSAGES/@PACKAGE@.mo $(DESTDIR)$(localedir)/de/LC_MESSAGES
+		    $(MKDIR_P) $(DESTDIR)$(localedir)/en/LC_MESSAGES
+		    chmod u+rwx $(DESTDIR)$(localedir)/en/LC_MESSAGES
+		    $(INSTALL) -m 644 $(srcdir)/en/LC_MESSAGES/@PACKAGE@.mo $(DESTDIR)$(localedir)/en/LC_MESSAGES
 
 uninstall-local:
-		    rm -f $(localedir)/de/LC_MESSAGES/@PACKAGE@.mo
-		    rm -f $(localedir)/en/LC_MESSAGES/@PACKAGE@.mo
+		    rm -f $(DESTDIR)$(localedir)/de/LC_MESSAGES/@PACKAGE@.mo
+		    rm -f $(DESTDIR)$(localedir)/en/LC_MESSAGES/@PACKAGE@.mo
