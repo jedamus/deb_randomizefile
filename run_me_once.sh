@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # erzeugt Mittwoch, 20. November 2019 14:15 (C) 2019 von Leander Jedamus
+# modifiziert Samstag, 04. Januar 2020 16:53 von Leander Jedamus
 # modifiziert Montag, 16. Dezember 2019 11:14 von Leander Jedamus
 # modifiziert Montag, 02. Dezember 2019 02:53 von Leander Jedamus
 # modifiziert Montag, 25. November 2019 10:09 von Leander Jedamus
@@ -21,6 +22,10 @@ rm -f debian/randomizefile.debhelper.log
 dh binary-arch --parallel
 sudo dh binary-arch --parallel
 sudo dpkg -i ../randomizefile_1.2_amd64.deb
+
+# info dh
+# info dch
+# man debhelper
 
 # vim:ai sw=2
 
