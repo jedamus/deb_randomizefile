@@ -7,6 +7,5 @@
 
 ```
 ./run_me_once.sh
-cd ..
-sudo dpkg -i randomizefile_1.2_amd64.deb
+sudo dpkg -i ../randomizefile_1.2_amd64.deb
 ```
